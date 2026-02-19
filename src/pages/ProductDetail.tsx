@@ -62,7 +62,7 @@ const ProductDetail = () => {
             <span>Back to Technologies</span>
           </motion.button>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
             {/* Product Image */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -174,17 +174,9 @@ const ProductDetail = () => {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button
+                  variant="default"
                   size="lg"
-                  className="flex-1 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 text-white font-semibold rounded-2xl py-6 shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 active:scale-95"
-                  onClick={() => navigate("/#contact")}
-                >
-                  <ShoppingCart className="w-5 h-5 mr-2" />
-                  Get Started
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="flex-1 border-2 border-primary/30 rounded-2xl py-6 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
+                  className="w-full bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 text-white font-semibold rounded-2xl py-6 shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 active:scale-95"
                   onClick={() => navigate("/#contact")}
                 >
                   Contact Us

@@ -77,34 +77,34 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full px-4 sm:px-6 lg:px-8 relative z-10"
+          className="w-full px-3 sm:px-6 lg:px-8 relative z-10"
         >
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col items-center justify-center gap-8 md:gap-12">
+          <div className="flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-12">
             {/* Three Small Logos at Top */}
-            <div className="flex items-center justify-center gap-6 md:gap-10 lg:gap-12">
+            <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-10 lg:gap-12">
               {/* Logo 1 - MGU */}
-              <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-xl bg-white/90 backdrop-blur-sm border-2 border-blue-200 flex items-center justify-center shadow-lg p-2">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-xl bg-white/90 backdrop-blur-sm border-2 border-blue-200 flex items-center justify-center shadow-lg p-1.5 sm:p-2">
                 <img src={logoMgu} alt="MGU Logo" className="w-full h-full object-contain" />
               </div>
 
               {/* Logo 2 - BARC */}
-              <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-xl bg-white/90 backdrop-blur-sm border-2 border-blue-200 flex items-center justify-center shadow-lg p-2">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-xl bg-white/90 backdrop-blur-sm border-2 border-blue-200 flex items-center justify-center shadow-lg p-1.5 sm:p-2">
                 <img src={logoBarc} alt="BARC Logo" className="w-full h-full object-contain" />
               </div>
 
               {/* Logo 3 - BIIC */}
-              <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-xl bg-white/90 backdrop-blur-sm border-2 border-blue-200 flex items-center justify-center shadow-lg p-2">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-xl bg-white/90 backdrop-blur-sm border-2 border-blue-200 flex items-center justify-center shadow-lg p-1.5 sm:p-2">
                 <img src={logoBiic} alt="BIIC Logo" className="w-full h-full object-contain" />
               </div>
             </div>
 
             {/* Center Text */}
-            <div className="text-center px-4">
-              <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-black mb-4 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-600 bg-clip-text text-transparent tracking-wider leading-tight" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 900, letterSpacing: '0.05em', filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.06))' }}>
+            <div className="text-center px-3 sm:px-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-black mb-3 sm:mb-4 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-600 bg-clip-text text-transparent tracking-wider leading-tight" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 900, letterSpacing: '0.05em', filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.06))' }}>
                 MGU AKRUTI KENDRA
               </h1>
-              <p className="text-base md:text-lg lg:text-2xl font-semibold text-black tracking-wide uppercase">
+              <p className="text-sm sm:text-base md:text-lg lg:text-2xl font-semibold text-black tracking-wide uppercase px-2">
                 Mahatma Gandhi University Campus, Kottayam, KERALA
               </p>
             </div>
@@ -163,7 +163,7 @@ const HeroSection = () => {
         </div>
 
         {/* Carousel Content */}
-        <div className="relative z-10 w-full px-4">
+        <div className="relative z-10 w-full px-3 sm:px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
           <AnimatePresence mode="wait">
             <motion.div
@@ -182,10 +182,10 @@ const HeroSection = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.1, ease: [0.4, 0, 0.2, 1] }}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 hover:scale-105 transition-transform duration-300"
+                  className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full glass mb-6 sm:mb-8 hover:scale-105 transition-transform duration-300"
                 >
                   <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                  <span className="text-sm font-medium text-muted-foreground">
+                  <span className="text-xs sm:text-sm font-medium text-muted-foreground">
                     {slide.badge}
                   </span>
                 </motion.div>
@@ -196,7 +196,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
-                className="text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-black mb-6 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-600 bg-clip-text text-transparent leading-tight text-center"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-black mb-4 sm:mb-6 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-600 bg-clip-text text-transparent leading-tight text-center px-2"
                 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 900, filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.06))' }}
               >
                 {slide.headline}
@@ -208,7 +208,7 @@ const HeroSection = () => {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.7, delay: 0.3, ease: [0.4, 0, 0.2, 1] }}
-                  className="mb-8 mx-auto max-w-3xl"
+                  className="mb-6 sm:mb-8 mx-auto max-w-3xl px-2 sm:px-0"
                 >
                   <img 
                     src={slide.image} 
@@ -223,7 +223,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.35, ease: [0.4, 0, 0.2, 1] }}
-                className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 text-justify"
+                className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 sm:mb-10 text-justify px-2"
               >
                 {slide.subtext}
               </motion.p>

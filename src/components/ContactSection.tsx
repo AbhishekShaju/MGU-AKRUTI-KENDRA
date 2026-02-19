@@ -39,7 +39,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="section-padding" ref={ref}>
       <div className="container-custom">
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}

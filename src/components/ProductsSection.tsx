@@ -42,7 +42,7 @@ const ProductsSection = () => {
         </motion.div>
 
         {/* Products Grid with Modern Spacing */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {products.map((product, index) => (
             <ProductCard key={product.name} {...product} index={index} />
           ))}

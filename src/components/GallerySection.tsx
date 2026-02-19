@@ -43,7 +43,7 @@ const GallerySection = () => {
         </motion.div>
 
         {/* Masonry Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 auto-rows-[200px]">
           {galleryItems.map((item, index) => (
             <motion.div
               key={item.id}

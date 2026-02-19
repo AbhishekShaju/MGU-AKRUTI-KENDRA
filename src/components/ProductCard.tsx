@@ -39,7 +39,7 @@ const ProductCard = ({
         scale: 1.02,
         transition: { duration: 0.3, ease: [0.4, 0, 0.2, 1] }
       }}
-      className="group relative h-full"
+      className="group relative h-full touch-manipulation"
     >
       {/* Enhanced Glow Effect on Hover */}
       <div 
